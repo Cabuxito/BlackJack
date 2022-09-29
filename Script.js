@@ -16,6 +16,8 @@ let playerScore = 0;
 let dealerScore = 0;
 let Deck = [];
 
+//Card Class
+
 class Card
 {
   constructor(colors, value, point)
@@ -33,6 +35,7 @@ class Card
 let newGameButton = document.getElementById("newGame");
 let StayButton = document.getElementById("Stay");
 let HitButton = document.getElementById("HitCard");
+let playAgainButton = document.getElementById("playAgain");
 
 //GameStart()
 
@@ -48,13 +51,13 @@ function GameStart() {
   playerCards = [getNextCard(), getNextCard()];
   showDealer();
   showPlayer();
-  newGameButton.remove();
+  newGameButton.style.visibility = "hidden";
   StayButton.style.visibility = "visible";
   HitButton.style.visibility = "visible";
 
 }
 
-//Functions
+//Display Card Function
 
 function DisplayCard(path, target, id)
 {
@@ -67,6 +70,8 @@ function DisplayCard(path, target, id)
   CardImg.classList.add = 'card'
   document.getElementById(target).appendChild(CardImg);
 }
+
+//Players Functions
 
 function showDealer(){
   for(i = 0; i < dealerCards.length; i++)
@@ -100,6 +105,16 @@ function showHiddenCard()
   }
 }
 
+function HitCardToDealer(){
+  let dealercard = getNextCard();
+  dealerCards.push(dealercard);
+  DisplayCard(dealercard.path, "dealerHand");
+  dealerScore = Score(dealerCards);
+  document.getElementById("DealerPoint").innerHTML = "Dealer Score: " + dealerScore;
+}
+
+//Player Functions
+
 function showPlayer(){
   playerCards.forEach(card => {
     DisplayCard(card.path, "playerHand");
@@ -111,20 +126,20 @@ function showPlayer(){
 
 }
 function HitCardToPlayer(){
-  let foundCard = getNextCard();
-  playerCards.push(foundCard);
-  DisplayCard(foundCard.path, "playerHand");
-  playerScore = Score(playerCards);
-  document.getElementById("playerPoint").innerHTML = "Player Score: "+ playerScore;
+  if(playerScore < 21)
+  {
+    let foundCard = getNextCard();
+    playerCards.push(foundCard);
+    DisplayCard(foundCard.path, "playerHand");
+    playerScore = Score(playerCards);
+    document.getElementById("playerPoint").innerHTML = "Player Score: "+ playerScore;
+  }
+  else
+  {
+    dealerWin();
+  }
 }
 
-function HitCardToDealer(){
-  let dealercard = getNextCard();
-  dealerCards.push(dealercard);
-  DisplayCard(dealercard.path, "dealerHand");
-  dealerScore = Score(dealerCards);
-  document.getElementById("DealerPoint").innerHTML = "Dealer Score: " + dealerScore;
-}
 
 //Deck Functions
 
@@ -176,7 +191,7 @@ function Score(cardScore)
     return score;
 }
 
-//EndGame
+//End Game
 
 function checkForEndOfGame() {
   if (gameOver == false) 
@@ -191,17 +206,32 @@ function checkForEndOfGame() {
   if (playerScore > 21) {
     playerWon = false;
     gameOver = true;
+    dealerWin();
   } else if (dealerScore > 21) {
     playerWon = true;
     gameOver = true;
+    playerWin();
   } else if (gameOver) {
     if (playerScore > dealerScore) {
       playerWon = true;
+      playerWin();
     } else {
       playerWon = false;
+      dealerWin();
     }
   }
-  playerWin();
+}
+
+//Win/Lose Function
+
+function dealerWin(){
+  if(playerWon == false)
+  {
+    document.getElementById("Win").innerHTML = "YOU LOOSEE";
+    HitButton.remove();
+    StayButton.remove();
+    playAgainButton.style.visibility = "visible";
+  }
 }
 
 function playerWin()
@@ -209,5 +239,14 @@ function playerWin()
   if(playerWon == true)
   {
     document.getElementById("Win").innerHTML = "CONGRATULATIONS, YOU WON.";
+    HitButton.remove();
+    StayButton.remove();
+    playAgainButton.style.visibility = "visible";
   }
+}
+
+//New Game
+
+function PlayAgain(){
+  location.reload();
 }
