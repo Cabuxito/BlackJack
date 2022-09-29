@@ -23,12 +23,11 @@ I have a projekt where I need to improve my skills with javaScript. So I need to
 
 ## Instructions
 
-![image](https://user-images.githubusercontent.com/89253662/189979140-662d1e63-4e6e-4680-96db-7cea5846ed02.png)
 
-* Press play to start a new game 
-* Press Highscore to see top 5 score
-* Press settings if you wants to delete all players saves.
-* When you die you can write your name into the top 5 if you are good enough, else you can try again by press Space!.
+
+* Press New Game to start a new game.
+* Press Hit if you want one more card.
+* Press Stay if you wants to stay with your cards.
 
 ## Tags
 
