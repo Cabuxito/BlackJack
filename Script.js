@@ -66,6 +66,9 @@ function DisplayCard(path, target, id)
   CardImg.className = 'bg-white';
   CardImg.id = id;
   CardImg.classList.add = 'card'
+  CardImg.style.margin = "5px";
+  CardImg.style.border = "2px solid Black";
+  CardImg.style.borderRadius = "5px";
   document.getElementById(target).appendChild(CardImg);
 }
 

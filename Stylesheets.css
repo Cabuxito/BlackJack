@@ -2,6 +2,11 @@
     visibility: hidden;
 }
 
+.newGame{
+    text-align: center;
+}
+
+
 .newCard{
     visibility: hidden;
 }
@@ -12,6 +17,7 @@
 
 .Hand{
     visibility: hidden;
+    font-size: 30px;
 }
 .card
 {
