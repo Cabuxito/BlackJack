@@ -1,0 +1,22 @@
+.stayButton {
+    visibility: hidden;
+}
+
+.newCard{
+    visibility: hidden;
+}
+    
+.title{
+    text-align: center;
+}
+
+.Hand{
+    visibility: hidden;
+}
+.card
+{
+    border: 2px black;
+}
+.Win{
+    visibility: hidden;
+}
