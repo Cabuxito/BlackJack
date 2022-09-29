@@ -17,8 +17,8 @@ I have a projekt where I need to improve my skills with javaScript. So I need to
 <ul>
   <li> V0.1: Create variables and  some basic functions.  [✔️]</li> 
   <li> V0.2: Introduce some visual to my game and Check for endgame. [✔️]</li> 
-  <li> V0.3: Improve player experience and do the game more fluid. [ in Process ]</li>
-  <li> V0.4: Add more functioner like split, etc... []</li>
+  <li> V0.3: Improve player experience and do the game more fluid. [✔️]</li>
+  <li> V0.4: Improve style and make fun to play.[ ]</li>
 </ul>
 
 ## Instructions
@@ -51,6 +51,9 @@ In this version I did make some improvements and add HTML to my game.
 
 **v0.3**: 
 In the current version the game is functional but have some bugs..
+
+**v0.4**:
+I improve style and add a picture some title.
 
 
 # To-do
