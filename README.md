@@ -23,48 +23,37 @@ I have a projekt where I need to improve my skills with javaScript. So I need to
 
 ## Instructions
 
-
+![image](https://user-images.githubusercontent.com/89253662/193124119-8b9deeff-081f-44c1-962d-a48e28378699.png)
 
 * Press New Game to start a new game.
+
+![image](https://user-images.githubusercontent.com/89253662/193124231-74abcbc5-ef96-46e3-ada2-0fadb40b171f.png)
+
 * Press Hit if you want one more card.
 * Press Stay if you wants to stay with your cards.
 
 ## Tags
 
-* [v1]https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1
-* [v1.1] https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1.1
-* [v1.2] https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1.2
-* [v1.3] https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1.3
-* [v1.4] https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1.4
-* [v1.5] https://github.com/Cabuxito/SnakeProjekt/tree/DevelopV1.5 - Current Version.
+* [v0.1] https://github.com/Cabuxito/BlackJack
+* [v0.2] https://github.com/Cabuxito/BlackJack
+* [v0.3] https://github.com/Cabuxito/BlackJack - current version
 
 ## Changelog
 
-[Github](https://github.com/Cabuxito/SnakeProjekt/branches) - Here is my branches and what it happens in every update.
+[Github](https://github.com/Cabuxito/BlackJack) - Here is my program and what it happens in every update.
 
-**v1**:
-Game window is working and it can see.
-The snake has a form and is created, but it is not incorporate in the game yet.
+**v0.1**:
+I did create all variables and functions like createDeck, Shuffle, etc..
 
-**v1.1**:
-Snake movements create and person can interact using the keys.
+**v0.2**:
+In this version I did make some improvements and add HTML to my game.
 
-**v1.2**: 
-Incorporate food to the game and try to increase or make some changes on the speed.
-
-**v1.3**:
-Add a menu Window and design it.
-
-**v1.4**:
-Add score and make menu user interactive and try to fix all bugs..
-
-**v1.5**:
-Options settings is half working.. but its there!
-
+**v0.3**: 
+In the current version the game is functional but have some bugs..
 
 
 # To-do
-* Fix Options
-* Incorporate Top 10
-* Add Sound
-* Try to change the snake color by users choice
+* Fix Style
+* Fix Hit Button
+* Add Split and Double
+* Try to add more players
