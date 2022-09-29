@@ -1,6 +1,4 @@
-
 //Card Variables
-  
 const Colors = [ "Hearts", "Spades", "Clubs", "Diamonds" ];
 const Value = [ "Ace", "King", "Queen", "Jack", "Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"];
 const Point = [ 1,10,10,10,10,9,8,7,6,5,4,3,2];
@@ -139,7 +137,6 @@ function HitCardToPlayer(){
     dealerWin();
   }
 }
-
 
 //Deck Functions
 
