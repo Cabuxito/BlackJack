@@ -23,11 +23,11 @@ I have a projekt where I need to improve my skills with javaScript. So I need to
 
 ## Instructions
 
-![image](https://user-images.githubusercontent.com/89253662/193124119-8b9deeff-081f-44c1-962d-a48e28378699.png)
+![image](https://user-images.githubusercontent.com/89253662/193132188-cd7e5084-23e1-4e18-aa24-87036afaa354.png)
 
 * Press New Game to start a new game.
 
-![image](https://user-images.githubusercontent.com/89253662/193124231-74abcbc5-ef96-46e3-ada2-0fadb40b171f.png)
+![image](https://user-images.githubusercontent.com/89253662/193132264-758edad6-b47b-4c90-8329-7e4f545e686d.png)
 
 * Press Hit if you want one more card.
 * Press Stay if you wants to stay with your cards.
@@ -36,7 +36,8 @@ I have a projekt where I need to improve my skills with javaScript. So I need to
 
 * [v0.1] https://github.com/Cabuxito/BlackJack
 * [v0.2] https://github.com/Cabuxito/BlackJack
-* [v0.3] https://github.com/Cabuxito/BlackJack - current version
+* [v0.3] https://github.com/Cabuxito/BlackJack
+* [v0.4] https://github.com/Cabuxito/BlackJack - current version
 
 ## Changelog
 
