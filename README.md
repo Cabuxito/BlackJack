@@ -8,7 +8,7 @@
 * [Tags](#Tags)
 * [Changelog](#Changelog)
 * [To-do](#To-do)
-* 
+
 ## Intro
 I have a projekt where I need to improve my skills with javaScript. So I need to do a BlackJack game on HTML and JS, and have some basics functions.
 
